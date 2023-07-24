@@ -7,11 +7,11 @@ lemmy:
 communityMap:
   - subreddit: ArtisanVideos
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 20  # Sets the minimum number of upvotes a post must have to be included.
+      postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 28  # Sets the minimum number of upvotes a post must have to be included.
       # maxDownvotes: 5  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -19,50 +19,50 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: artisanvideos@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
 
   - subreddit: cardano
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 20  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 5  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 26  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.94  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
-        - i\.redd.it\/\w+
+        # - i\.redd.it\/\w+
         - v\.redd.it\/\w+
     community:
       name: cardano@lemmy.world
       # name: cardano@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
 
   - subreddit: EnoughMuskSpam
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 400  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 50  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      postLimit: 6  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 450  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 50  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
-        - i\.redd.it\/\w+
+        # - i\.redd.it\/\w+
         - v\.redd.it\/\w+
     community:
       name: enoughmuskspam@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: ergonauts
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 17  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 4  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvotes: 16  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 4  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -70,15 +70,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: ergo@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: CardanoDevelopers
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 3  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 3  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 3  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -87,15 +87,15 @@ communityMap:
     community:
       name: cardanodevelopers@lemmy.world
       # name: cardanodevelopers@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: collapse
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 700  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 3  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 750  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 300  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.94  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -103,15 +103,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: collapse@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: EngineeringPorn
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 29  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.50  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      postLimit: 4  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 36  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -119,15 +119,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: engineeringporn@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: antiwork
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
+      postLimit: 3  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 900  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -135,15 +135,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: antiwork@lemmy.ml
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Machinists
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
+      postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 25  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 25  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 25  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -151,15 +151,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: machinists@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Midnight
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
+      postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 5  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 5  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -167,15 +167,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: midnight@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: GuitarAmps
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -183,15 +183,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: guitaramps@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: RedneckEngineering
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvotes: 20  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -199,15 +199,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: redneckengineering@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Offset
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 10  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -215,15 +215,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: offset@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Purescript
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 480000  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -231,15 +231,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: purescript@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: LateStageCapitalism
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 600  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.75  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -247,15 +247,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: latestagecapitalism@lemmygrad.ml
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: UnethicalLifeProTips
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 80  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 200  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -263,31 +263,32 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: unethicallifeprotips@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Science
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
+      postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 300  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 300  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 4800000  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.93  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
         - i\.redd.it\/\w+
         - v\.redd.it\/\w+
+        - psypost\.org
     community:
       name: science@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: ethereum
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 100  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvotes: 120  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.94  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -295,15 +296,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: ethereum@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: bitcoin
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 55  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 55  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.84  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvotes: 155  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 55  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.93  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -311,15 +312,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: bitcoin@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: cryptocurrency
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 150  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 150  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvotes: 250  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 150  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.93  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -327,15 +328,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: cryptocurrency@lemmy.ml
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
   
   - subreddit: BuyItForLife
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 30  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.93  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -343,15 +344,31 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: buyitforlife@sh.itjust.works
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: BuyItForLife
+    postFilter:
+      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 30  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.93  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: buyitforlife@sh.itjust.works
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Luthier
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -359,15 +376,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: luthier@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: SelfAwarewolves
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 20  # Sets the minimum number of upvotes a post must have to be included.
       # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      minUpvoteRatio: 0.94  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -375,15 +392,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: selfawarewolves@lemmy.ml
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Guitar
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 20  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -391,15 +408,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: guitars@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Movies
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 400  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -407,15 +424,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: moviesandtv@lemmy.film
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Television
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 400  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -423,15 +440,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: moviesandtv@lemmy.film
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: socialism
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 120  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -439,15 +456,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: socialism@lemmy.ml
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: photoshopbattles
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 300  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 30000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       # excludedUrlPatterns: # User defined regular expresions to exclude urls.
       #   - \.redd\.it$
       #   - reddit\.com
@@ -455,15 +472,15 @@ communityMap:
       #   - v\.redd.it\/\w+
     community:
       name: photoshopbattles@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Anarchy101
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -471,15 +488,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: anarchism101@lemmy.ca
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: cypherpunk
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 1000  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -487,15 +504,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: cypherpunk@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: formalmethods
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 6  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 9  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 9  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -503,15 +520,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: formal_methods@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Coq
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 9  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 9  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -519,15 +536,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: formal_methods@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: dependent_types
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 4  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -535,15 +552,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: formal_methods@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: Idris
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 4  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -551,15 +568,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: formal_methods@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: InteractiveThmProving
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 4  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -567,15 +584,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: formal_methods@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: haskell
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 30  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -583,15 +600,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: haskell@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: functionalprogramming
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 9  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -599,15 +616,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: functional_programming@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: NixOS
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 9  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -615,15 +632,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: nixos@infosec.pub
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: coolgithubprojects
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 20  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -631,15 +648,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: githubprojects@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: DomainDrivenDesign
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 4  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -647,15 +664,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: ddd@programming.dev
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: DIY
     postFilter:
       postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
       minUpvotes: 50  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 600  # Sets the maximum number of downvotes a post can have to be included.
+      # maxDownvotes: 600  # Sets the maximum number of downvotes a post can have to be included.
       minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -663,63 +680,15 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: diy@slrpnk.net
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
-
-  - subreddit: Kossacks_for_Sanders
-    postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 7  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 40  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
-      excludedUrlPatterns: # User defined regular expresions to exclude urls.
-        - \.redd\.it$
-        - reddit\.com
-        - i\.redd.it\/\w+
-        - v\.redd.it\/\w+
-    community:
-      name: leftism@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
-
-  - subreddit: WeAreNotAsking
-    postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
-      excludedUrlPatterns: # User defined regular expresions to exclude urls.
-        - \.redd\.it$
-        - reddit\.com
-        - i\.redd.it\/\w+
-        - v\.redd.it\/\w+
-    community:
-      name: leftism@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
-
-  - subreddit: Berniecrats
-    postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
-      excludedUrlPatterns: # User defined regular expresions to exclude urls.
-        - \.redd\.it$
-        - reddit\.com
-        - i\.redd.it\/\w+
-        - v\.redd.it\/\w+
-    community:
-      name: leftism@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
 
   - subreddit: SandersForPresident
     postFilter:
-      postLimit: 1  # Limits the number of posts to retrieve from the subreddit.
-      minUpvotes: 5  # Sets the minimum number of upvotes a post must have to be included.
-      maxDownvotes: 60  # Sets the maximum number of downvotes a post can have to be included.
-      minUpvoteRatio: 0.90  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
-      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      postLimit: 5  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 199  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 90  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.96  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
       excludedUrlPatterns: # User defined regular expresions to exclude urls.
         - \.redd\.it$
         - reddit\.com
@@ -727,4 +696,167 @@ communityMap:
         - v\.redd.it\/\w+
     community:
       name: leftism@lemmy.world
-      postIfQuietFor: 5 # Posting will be skipped if a post is newer than this amount of hours
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: EnoughIDWspam
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 1  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.92  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 52  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: enoughidwspam@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: AdventureBuilders
+    postFilter:
+      postLimit: 50  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 1  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 54000000000000000  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: adventurebuilders@slrpnk.net
+      postIfQuietFor: 1 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: GIMP
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 4  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.87  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: gimp@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: krita
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.87  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: krita@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: DarkTable
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 2  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.85  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: darktable@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: gadgets
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 169  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.83  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 168  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: gadgets@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: espresso
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 30  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.83  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        # - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: espresso@infosec.pub
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: Inkscape
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 10  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.83  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        # - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: inkscape@lemmy.world
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+  - subreddit: chomsky
+    postFilter:
+      postLimit: 10  # Limits the number of posts to retrieve from the subreddit.
+      minUpvotes: 25  # Sets the minimum number of upvotes a post must have to be included.
+      # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+      minUpvoteRatio: 0.83  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+      maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+      excludedUrlPatterns: # User defined regular expresions to exclude urls.
+        - \.redd\.it$
+        - reddit\.com
+        # - i\.redd.it\/\w+
+        - v\.redd.it\/\w+
+    community:
+      name: politics@kbin.social
+      postIfQuietFor: 2 # Posting will be skipped if a post is newer than this amount of hours
+
+
+  # - subreddit: McMansionHell
+  #   postFilter:
+  #     postLimit: 2  # Limits the number of posts to retrieve from the subreddit.
+  #     minUpvotes: 25  # Sets the minimum number of upvotes a post must have to be included.
+  #     # maxDownvotes: 100  # Sets the maximum number of downvotes a post can have to be included.
+  #     minUpvoteRatio: 0.89  # Defines the minimum ratio of upvotes to total votes a post must have to be included.
+  #     maxTimeHours: 48  # Specifies the maximum age (in hours) of a post to be included.
+  #     excludedUrlPatterns: # User defined regular expresions to exclude urls.
+  #       - \.redd\.it$
+  #       - reddit\.com
+  #       # - i\.redd.it\/\w+
+  #       - v\.redd.it\/\w+
+  #   community:
+  #     name: mcmansionhell@sh.itjust.works
+  #     postIfQuietFor: 1 # Posting will be skipped if a post is newer than this amount of hours
+
+
