@@ -44,3 +44,4 @@ coverage/
 
 # Yarn integrity file
 .yarn-integrity
+config.yml
