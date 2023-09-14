@@ -3,14 +3,19 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/master";
   inputs.systems.url = "github:nix-systems/default";
 
-  outputs = { self, nixpkgs, flake-utils, systems, }:
+  outputs = {
+    self,
+    nixpkgs,
+    flake-utils,
+    systems,
+  }:
     flake-utils.lib.eachSystem (import systems)
     (system: let
       pkgs = import nixpkgs {
         inherit system;
       };
       start = pkgs.writeShellScriptBin "start" ''
-        local settings=$(cat config.yml)
+        settings=$(cat config.yml)
         echo "current settings are:"
         echo $settings
         npm run start -- --cron "*/20 * * * *"
@@ -27,9 +32,9 @@
       devShells.default = pkgs.mkShell {
         inherit name;
         packages = with pkgs; [
-            build
-            start
-          ];
+          build
+          start
+        ];
         buildInputs = [
           pkgs.nodejs
           pkgs.nodePackages.pnpm
